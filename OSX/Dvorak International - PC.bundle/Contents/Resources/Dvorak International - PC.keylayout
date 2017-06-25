@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!-- Fri, 24 Feb 2006 Generated from KCHR: "Dvorak" -->
-<!--Last edited by Ukelele version 3.2.5.180 on 2017-06-23 at 00:10 (GMT-3)-->
-<keyboard group="126" id="-13025" name="Dvorak International - PC" maxout="1">
+<!--Last edited by Ukelele version 3.2.5.180 on 2017-06-24 at 23:37 (GMT-3)-->
+<keyboard group="126" id="-2999" name="Dvorak International - PC" maxout="1">
 	<layouts>
 		<layout first="0" last="0" mapSet="ANSI" modifiers="commonModifiers"/>
 	</layouts>
@@ -55,7 +55,7 @@
 			<key code="9" output="k"/>
 			<key code="10" output="§"/>
 			<key code="11" output="x"/>
-			<key code="12" action="&#x0027; 1"/>
+			<key code="12" action="&#x0027;"/>
 			<key code="13" output=","/>
 			<key code="14" output="."/>
 			<key code="15" output="p"/>
@@ -98,10 +98,6 @@
 			<key code="52" output="&#x0003;"/>
 			<key code="53" output="&#x001B;"/>
 			<!-- gap, 54 through 64 -->
-			<key code="55" output=""/>
-			<key code="56" output=""/>
-			<key code="57" output=""/>
-			<key code="59" output=""/>
 			<key code="64" output="&#x0010;"/>
 			<key code="65" output="."/>
 			<key code="66" output="&#x001D;"/>
@@ -199,7 +195,7 @@
 			<key code="31" output="R"/>
 			<key code="32" output="G"/>
 			<key code="33" output="?"/>
-			<key code="34" output="C"/>
+			<key code="34" action="C"/>
 			<key code="35" output="L"/>
 			<key code="36" output="&#x000D;"/>
 			<key code="37" action="N"/>
@@ -999,16 +995,13 @@
 			<when state="s3" output="ˆ"/>
 			<when state="s4" output="˜"/>
 			<when state="s5" output="`"/>
+			<when state="s6" output="&#x0022;"/>
 		</action>
 		<action id="&#x0022;">
-			<when state="none" next="s2"/>
+			<when state="none" next="s6"/>
 		</action>
 		<action id="&#x0027;">
-			<when state="none" next="Dead Key State 0"/>
-		</action>
-		<action id="&#x0027; 1">
 			<when state="none" next="s1"/>
-			<when state="Dead Key State 0" next="s1"/>
 		</action>
 		<action id="A">
 			<when state="none" output="A"/>
@@ -1017,6 +1010,10 @@
 			<when state="s3" output="Â"/>
 			<when state="s4" output="Ã"/>
 			<when state="s5" output="À"/>
+		</action>
+		<action id="C">
+			<when state="none" output="C"/>
+			<when state="s1" output="Ç"/>
 		</action>
 		<action id="E">
 			<when state="none" output="E"/>
@@ -1071,6 +1068,7 @@
 			<when state="s3" output="â"/>
 			<when state="s4" output="ã"/>
 			<when state="s5" output="à"/>
+			<when state="s6" output="ä"/>
 		</action>
 		<action id="c">
 			<when state="none" output="c"/>
@@ -1082,6 +1080,7 @@
 			<when state="s2" output="ë"/>
 			<when state="s3" output="ê"/>
 			<when state="s5" output="è"/>
+			<when state="s6" output="ë"/>
 		</action>
 		<action id="i">
 			<when state="none" output="i"/>
@@ -1089,6 +1088,7 @@
 			<when state="s2" output="ï"/>
 			<when state="s3" output="î"/>
 			<when state="s5" output="ì"/>
+			<when state="s6" output="ï"/>
 		</action>
 		<action id="n">
 			<when state="none" output="n"/>
@@ -1101,6 +1101,7 @@
 			<when state="s3" output="ô"/>
 			<when state="s4" output="õ"/>
 			<when state="s5" output="ò"/>
+			<when state="s6" output="ö"/>
 		</action>
 		<action id="u">
 			<when state="none" output="u"/>
@@ -1108,10 +1109,12 @@
 			<when state="s2" output="ü"/>
 			<when state="s3" output="û"/>
 			<when state="s5" output="ù"/>
+			<when state="s6" output="ü"/>
 		</action>
 		<action id="y">
 			<when state="none" output="y"/>
 			<when state="s2" output="ÿ"/>
+			<when state="s6" output="ÿ"/>
 		</action>
 		<action id="~">
 			<when state="none" next="s4"/>
@@ -1130,12 +1133,11 @@
 		</action>
 	</actions>
 	<terminators>
-		<when state="Dead Key State 0" output=""/>
-		<when state="Dead Key State 1" output=""/>
 		<when state="s1" output="´"/>
 		<when state="s2" output="¨"/>
 		<when state="s3" output="ˆ"/>
 		<when state="s4" output="˜"/>
 		<when state="s5" output="`"/>
+		<when state="s6" output="&#x0022;"/>
 	</terminators>
 </keyboard>

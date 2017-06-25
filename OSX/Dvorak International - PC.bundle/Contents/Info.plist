@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument</string>
+	<string>org.sil.ukelele.keyboardlayout.dvorakinternational-pc</string>
 	<key>CFBundleName</key>
 	<string>Dvorak International - PC</string>
 	<key>CFBundleVersion</key>
@@ -11,7 +11,7 @@
 	<key>KLInfo_Dvorak International - PC</key>
 	<dict>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.unsavedukeleledocument.dvorakinternational-pc</string>
+		<string>org.sil.ukelele.keyboardlayout.dvorakinternational-pc.dvorakinternational-pc</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
