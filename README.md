@@ -11,3 +11,8 @@ Use the `Dvorak International - PC.dmg`.
 2 - Open `Preferences` > `Keyboard` > `Input Source`.
 
 3 - Click on `+` and choose the `Dvorak International - PC`.
+
+## TODO
+
+* Windows version
+* Linux version
